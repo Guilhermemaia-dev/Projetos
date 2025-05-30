@@ -1,0 +1,13 @@
+# Calculadora de Binário 
+
+def binarioconversor(numero):
+     numeroverdadeiro = numero
+     concatenador = ''
+     while numero > 0 :
+      x = numero#Ex: numeroriginal = 10
+      binario = int(x/2 ) # Ex: int(10/2)
+      concatenador += str(numero%2) #Ex: str(10%2) = str (0)
+      numero = binario #Ex: numero(10) = binario()
+     return f'O número {numeroverdadeiro} em binário é {concatenador[::-1]}'
+
+
